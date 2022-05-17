@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="css/main.css"> 
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html">To-Do-List</a>
+
+            <nav>
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>       
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="center-col">
+                <h1>To-Do-List</h1>
+
+                <div class="hero-cta">
+                    <input type="text" id="add-list" name="add-list"> 
+                    <input type="submit" class="add-list" value="Add">
+                </div>
+                
+                <div class="delete--cta">
+                    <input type="text" id="delete-list" name="delete-list"> 
+                    <input type="submit" class="delete-list" value="Delete">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <ul>
+                <li>
+                    <blockquote>"Test"</blockquote>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="how-contact">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">  
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                                        
+                    <label for="contact-number">Contact Number</label>
+                    <input type="number" id="contact-number" name="contact-number">
+                    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
